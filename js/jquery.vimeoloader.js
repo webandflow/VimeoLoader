@@ -22,7 +22,7 @@ $(document).ready(function(){
 		var flag = $('.current-tag');
 		$('.current-tag').remove();
 		
-		$(this).closest('.video-thumb-wrapper').prepend(flag);
+		$(this).closest('.video-loader').prepend(flag);
 		}
 	
 	});

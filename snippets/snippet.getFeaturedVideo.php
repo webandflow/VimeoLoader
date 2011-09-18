@@ -8,6 +8,11 @@
 */
 
 require_once('core/components/vimeo/classes/class.vimeoloader.php');
+
+// Register the default CSS and jQuery files
+$modx->regClientCSS('core/components/vimeo/css/vimeoloader.css');
+$modx->regClientScript('core/components/vimeo/js/jquery.vimeoloader.js');
+
 $output = '';
 $vid = (isset($vid)) ? $vid : '';
 

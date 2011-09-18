@@ -14,3 +14,16 @@
 .video-thumb-wrapper img  {
     border: 1px solid #9a3d1d;
 }
+
+.video-loader {
+    position: relative;
+}
+
+.current-tag {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 25px;
+    background: transparent url(../../../../styles/assets/now_playing.png) top left no-repeat;
+}
