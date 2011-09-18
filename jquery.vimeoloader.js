@@ -1,3 +1,9 @@
+/* 
+    jquery.vimeoloader.js
+    =-=-=-=-=-=-=-=-=-=-=
+    This jQuery file is used to support the VimeoLoader for MODX add-on
+*/
+
 $(document).ready(function(){
 	var vidwrapper = $('#featuredVideoWrapper');
 	
@@ -20,6 +26,4 @@ $(document).ready(function(){
 		}
 	
 	});
-
-
 });

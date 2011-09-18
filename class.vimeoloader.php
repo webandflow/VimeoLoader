@@ -1,5 +1,20 @@
 <?php
 
+/*
+
+ VimeoLoader for MODX Revolution
+ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ 
+ VimeoLoader for MODX Revolution is an add-on for the MODX Content Managment System which
+ uses the Vimeo api to find a display videos based on a vimeo user ID.
+ 
+ ** CAUTION **
+ This is pre-release software and should likely not be used in a production environment
+ 
+ 
+
+*/
+
 class VimeoLoader {
     
     private $modx;
@@ -10,10 +25,10 @@ class VimeoLoader {
     private $format;
     private $featuredID;
     
-    function __construct(&$modx) {
+    function __construct(&$modx,$user='user7374360') {
     
         $this->modx = $modx;
-        $this->user = 'user7374360';
+        $this->user = $user;
         $this->requestUrl = 'http://vimeo.com/api/v2/'.$this->user.'/';
         $this->format = 'json';
         $this->request = 'videos';
