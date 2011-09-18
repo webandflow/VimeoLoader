@@ -1,0 +1,16 @@
+/* 
+    Default CSS Definitions for VimeoLoader MODX Add-On 
+*/
+
+.video-thumb-wrapper {
+    width: 225px;
+    float:  left;
+    text-align: center;
+}
+.video-thumb-wrapper h5 {
+    font-size: 14px;
+    line-height: 1.2;
+}
+.video-thumb-wrapper img  {
+    border: 1px solid #9a3d1d;
+}

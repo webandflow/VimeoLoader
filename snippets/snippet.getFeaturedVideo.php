@@ -7,7 +7,7 @@
     full collection of Vimeo videos.
 */
 
-require_once('core/components/vimeo/class.vimeoloader.php');
+require_once('core/components/vimeo/classes/class.vimeoloader.php');
 $output = '';
 $vid = (isset($vid)) ? $vid : '';
 

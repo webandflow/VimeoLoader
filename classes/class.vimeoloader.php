@@ -54,7 +54,7 @@ class VimeoLoader {
 		$this->videoFeed = $data;
     }
     
-    public function getAllVideos($vid='',$w=400,$h=275) {
+    public function getAllVideos($vid='',$includeVimeoLink=0,$w=400,$h=275) {
        
        	$this->featuredID = $vid;
         $output = '';
@@ -79,6 +79,8 @@ class VimeoLoader {
         		
         		$data['current'] = ($data['vid'] == $this->featuredID) ? 'current-video' : '';
         		$data['currenttag'] = ($data['vid'] == $this->featuredID) ? $this->modx->getChunk('vl_vimeoCurrentFlag') : '';
+        		$data['href'] = ($includeVimeoLink == 1) ? "href=\"http://www.vimeo.com/" . $data['vid'] . "\"": "";
+        		
         		$allvids .= $this->modx->getChunk('vl_vimeoVideoThumbTpl',$data);
    	    
         $i++;
