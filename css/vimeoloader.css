@@ -21,8 +21,8 @@
 
 .current-tag {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 3px;
+    left: 1px;
     width: 200px;
     height: 25px;
     background: transparent url(../../../../styles/assets/now_playing.png) top left no-repeat;
